@@ -1,0 +1,61 @@
+{
+  "testifact_info": {
+    "testsuite_name": "DEMO TEST",
+    "testsuite_owner": "Arjit",
+    "test_report_path":"C:\\Users\\yadav\\ATAS\\ATAS_Runner\\playwright_atas\\test-reports",
+    "object_map_external": "C:\\Users\\yadav\\ATAS\\ATAS_Runner\\playwright_atas\\object__map.json"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Login Check Facebook",
+      "description": "",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "https://www.facebook.com"
+          }
+        },
+        {
+          "action_name": "ui_click",
+          "action_type": "ui",
+          "action_config": {
+            "object_name": "sign_in_button"
+          }
+        }
+      ]
+    },
+    {
+      "test_name": "Login Check Google",
+      "description": "",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "https://www.google.com"
+          }
+        }
+      ]
+    }
+  ]
+}

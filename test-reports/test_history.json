@@ -1,0 +1,1094 @@
+[
+  {
+    "timestamp": "2025-09-02T14:03:47.137Z",
+    "buildInfo": {
+      "timestamp": "2025-09-02T14:03:46.768Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "f300389b9c0d7e3cb6063ed321749c1b030f3e0c",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5699055616
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check Facebook",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 3369,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check Google",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 3997,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-02T14:03:39.381Z",
+    "buildInfo": {
+      "timestamp": "2025-09-02T14:03:39.002Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "f300389b9c0d7e3cb6063ed321749c1b030f3e0c",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5736312832
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check Facebook",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 4571,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check Google",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 5735,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-02T13:45:21.602Z",
+    "buildInfo": {
+      "timestamp": "2025-09-02T13:45:21.165Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5929377792
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 5244,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 5663,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-02T13:41:57.626Z",
+    "buildInfo": {
+      "timestamp": "2025-09-02T13:41:57.207Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6273900544
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 6407,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 3254,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-02T13:40:40.931Z",
+    "buildInfo": {
+      "timestamp": "2025-09-02T13:40:39.908Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6731837440
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 4299,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 5210,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-02T09:52:58.281Z",
+    "buildInfo": {
+      "timestamp": "2025-09-02T09:52:57.707Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 3105689600
+        }
+      }
+    },
+    "summary": {
+      "total": 3,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 3576,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 3332,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "DEMO TEST",
+        "suite": "Default",
+        "duration": 6908,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-02T09:52:11.057Z",
+    "buildInfo": {
+      "timestamp": "2025-09-02T09:52:10.555Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 3160313856
+        }
+      }
+    },
+    "summary": {
+      "total": 3,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 3597,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 2294,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "DEMO TEST",
+        "suite": "Default",
+        "duration": 5891,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-02T09:51:00.657Z",
+    "buildInfo": {
+      "timestamp": "2025-09-02T09:50:59.906Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 3294437376
+        }
+      }
+    },
+    "summary": {
+      "total": 3,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 3987,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 4234,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "DEMO TEST",
+        "suite": "Default",
+        "duration": 8222,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-02T09:48:36.103Z",
+    "buildInfo": {
+      "timestamp": "2025-09-02T09:48:35.033Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 2902585344
+        }
+      }
+    },
+    "summary": {
+      "total": 3,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 4627,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 3620,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "DEMO TEST",
+        "suite": "Default",
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T17:09:33.652Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T17:09:33.242Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5963878400
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 1,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 5134,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "Default",
+        "status": "FAIL",
+        "duration": 2092,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T17:02:51.586Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T17:02:51.151Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5750546432
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 3513,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 3474,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T16:55:39.159Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T16:55:38.753Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6001180672
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 3965,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 3694,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T16:54:50.091Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T16:54:49.558Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6195974144
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 0,
+      "failed": 2,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check 1",
+        "suite": "Default",
+        "status": "FAIL",
+        "duration": 32747,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check 2",
+        "suite": "Default",
+        "status": "FAIL",
+        "duration": 32938,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T16:52:49.891Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T16:52:49.414Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6005153792
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check",
+        "suite": "Default",
+        "status": "FAIL",
+        "duration": 32845,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T16:49:37.309Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T16:49:36.811Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6220967936
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check",
+        "suite": "Default",
+        "status": "FAIL",
+        "duration": 35213,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T16:48:30.463Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T16:48:30.015Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6113337344
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 3611,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T16:47:42.443Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T16:47:41.794Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6124634112
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 3969,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T16:47:09.096Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T16:47:08.679Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5805473792
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 3618,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T16:46:31.096Z",
+    "buildInfo": {
+      "timestamp": "2025-09-01T16:46:29.779Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "main",
+        "commit": "305fb479c76d5a79f7992ca15c283b6685bf16f8",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5823733760
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check",
+        "suite": "Default",
+        "status": "PASS",
+        "duration": 5470,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T15:51:24.096Z",
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testCases": [
+      {
+        "name": "Login Check",
+        "status": "FAIL",
+        "duration": 33136
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-01T15:47:08.496Z",
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testCases": [
+      {
+        "name": "Login Check",
+        "status": "FAIL",
+        "duration": 32993
+      }
+    ]
+  }
+]

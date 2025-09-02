@@ -1,0 +1,21 @@
+{
+  "name": "playwright-atas",
+  "version": "1.0.0",
+  "description": "JSON-driven test automation framework using Playwright",
+  "main": "index.js",
+  "bin": {
+    "atas": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node index.js",
+    "start": "node bin/cli.js run"
+  },
+  "keywords": ["testing", "automation", "playwright"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.41.2",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  }
+}

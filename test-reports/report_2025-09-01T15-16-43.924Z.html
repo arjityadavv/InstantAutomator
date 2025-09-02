@@ -1,0 +1,56 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Test Execution Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                .test-case { border: 1px solid #ddd; margin: 10px 0; padding: 10px; }
+                .PASS { color: green; }
+                .FAIL { color: red; }
+                .step { margin: 5px 0; padding: 5px; background: #f5f5f5; }
+            </style>
+        </head>
+        <body>
+            <h1>Test Execution Report</h1>
+            <div class="summary">
+                <h2>Summary</h2>
+                <p>Total Tests: 1</p>
+                <p>Passed: 1</p>
+                <p>Failed: 0</p>
+            </div>
+            <div class="test-cases">
+                
+                    <div class="test-case">
+                        <h3>Login Check - <span class="PASS">PASS</span></h3>
+                        <p>Duration: 33019ms</p>
+                        <h4>Steps:</h4>
+                        
+                            <div class="step">
+                                <p><strong>ui_open_browser</strong> - <span class="PASS">PASS</span></p>
+                                <p>Browser opened successfully</p>
+                            </div>
+                        
+                            <div class="step">
+                                <p><strong>ui_navigate</strong> - <span class="pass">pass</span></p>
+                                <p>url navigated</p>
+                            </div>
+                        
+                            <div class="step">
+                                <p><strong>ui_click</strong> - <span class="fail">fail</span></p>
+                                <p>Click failed: locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//button[@name=\'log55in\']') to be visible[22m
+</p>
+                            </div>
+                        
+                            <div class="step">
+                                <p><strong>Test Abort</strong> - <span class="INFO">INFO</span></p>
+                                <p>Test execution stopped due to failure</p>
+                            </div>
+                        
+                    </div>
+                
+            </div>
+        </body>
+        </html>

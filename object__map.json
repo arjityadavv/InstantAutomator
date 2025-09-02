@@ -1,0 +1,6 @@
+{
+  "sign_in_button": {
+    "locator_name": "xpath",
+    "locator_value": "//button[@name='login']"
+  }
+}
