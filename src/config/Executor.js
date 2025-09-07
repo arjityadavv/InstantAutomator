@@ -1,136 +1,124 @@
-const { chromium } = require('@playwright/test');
-const UIActions = require('../actions/UIActions');
+const BrowserActions = require('../actions/BrowserActions');
+const ElementActions = require('../actions/ElementActions');
+const NavigationActions = require('../actions/NavigationActions');
+const VerificationActions = require('../actions/VerificationActions');
+const WaitActions = require('../actions/WaitActions');
 const Reporter = require('../utils/Reporter');
-const TestDataManager = require('../utils/TestDataManager');
-const fs = require('fs').promises;
 const path = require('path');
 
 class Executor {
-    constructor(testSuiteInfo) {
-        this.uiActions = null;
-        this.page = null;
-        this.browser = null;
-        this.reporter = new Reporter(testSuiteInfo.test_report_path);
-        this.testDataManager = new TestDataManager();
-        this.testSuiteInfo = testSuiteInfo;
+    constructor(config) {
+        this.config = config;
+        this.actions = {
+            ui: new BrowserActions(config),
+            element: new ElementActions(config),
+            navigation: new NavigationActions(config),
+            verification: new VerificationActions(config),
+            wait: new WaitActions(config)
+        };
+        this.reporter = new Reporter(path.resolve(config.test_report_path));
     }
 
-    async loadObjectMap() {
-        try {
-            if (this.testSuiteInfo.object_map_external) {
-                const externalMap = await fs.readFile(this.testSuiteInfo.object_map_external, 'utf8');
-                return { ...JSON.parse(externalMap), ...this.testSuiteInfo.object_map_internal };
-            }
-            return this.testSuiteInfo.object_map_internal || {};
-        } catch (error) {
-            console.error('Error loading object map:', error);
-            return {};
-        }
-    }
-
-    async executeTestCase(testCase) {
-        await this.reporter.startTest(testCase.test_name);
-        console.log(`Executing test case: ${testCase.test_name}`);
-        
-        if (testCase.execute.toLowerCase() !== 'yes') {
-            await this.reporter.addStep('Skip Test', 'INFO', 'Test case execution is disabled');
-            await this.reporter.endTest();
-            return;
-        }
-
-        // Load variables if present
-        if (testCase.variables) {
-            Object.entries(testCase.variables).forEach(([key, value]) => {
-                this.testDataManager.setVariable(key, value);
-            });
-        }
-
-        const objectMap = await this.loadObjectMap();
-
-        for (const action of testCase.test_actions) {
-            try {
-                // Process variables in action config
-                const processedConfig = this.testDataManager.processActionConfig(action.action_config);
-                action.action_config = processedConfig;
-
-                const result = await this.executeAction(action, objectMap);
-                await this.reporter.addStep(action.action_name, result.result, result.message);
-
-                if (action.action_name === 'ui_open_browser' && result.page) {
-                    this.page = result.page;
-                    this.browser = result.browser;
-                    this.uiActions = new UIActions(this.page);
-                }
-
-                // Capture screenshot for any of these conditions:
-                // 1. Action failed
-                // 2. Explicitly requested in action config
-                // 3. Action is a verification/assertion
-                if (result.result === 'FAIL' || 
-                    action.action_config?.capture_screenshot || 
-                    action.action_name.toLowerCase().includes('assert') || 
-                    action.action_name.toLowerCase().includes('verify')) {
-                    
-                    const screenshotName = result.result === 'FAIL' ? 
-                        `failed_${action.action_name}` : 
-                        `${action.action_name}`;
-                    
-                    const screenshotPath = await this.reporter.captureScreenshot(this.page, screenshotName);
-                    if (screenshotPath) {
-                        await this.reporter.addStep('Screenshot', 'INFO', `Screenshot captured at: ${screenshotPath}`);
-                    }
-                }
-
-                if (!result.continueTest) {
-                    await this.reporter.addStep('Test Abort', 'FAIL', 'Test execution stopped due to failure');
-                    // Always capture screenshot on test abortion
-                    await this.reporter.captureScreenshot(this.page, 'test_abort');
-                    break;
-                }
-            } catch (error) {
-                await this.reporter.addStep(action.action_name, 'FAIL', `Error: ${error.message}`);
-                await this.reporter.captureScreenshot(this.page, `error_${action.action_name}`);
-                break;
-            }
-        }
-
-        if (this.browser) {
-            await this.browser.close();
-        }
-
-        await this.reporter.endTest();
-    }
-
-    async executeAction(action, objectMap) {
-        if (action.action_name === 'ui_open_browser') {
-            this.uiActions = new UIActions(null);
-            return await this.uiActions.uiOpenBrowser(action.action_config);
-        }
-
-        if (!this.uiActions) {
-            this.uiActions = new UIActions(this.page);
-        }
-
-        switch (action.action_name) {
-            case 'ui_navigate':
-                return await this.uiActions.uiNavigate(action.action_config);
-            case 'ui_click':
-                return await this.uiActions.uiClick(action.action_config, objectMap);
-            default:
-                throw new Error(`Unknown action: ${action.action_name}`);
-        }
-    }
     async executeTests(testScript) {
-        console.log(`Executing test suite: ${testScript.testifact_info.testsuite_name}`);
-        console.log(`Total test cases: ${testScript.testifact_items.length}`);
-        
-        await this.reporter.startTestSuite(testScript.testifact_info.testsuite_name);
-        
-        for (const testCase of testScript.testifact_items) {
-            await this.executeTestCase(testCase);
+        const results = {
+            success: true,
+            logs: []
+        };
+
+        try {
+            // Start the test suite
+            await this.reporter.startTestSuite(testScript.testifact_info.testsuite_name);
+
+            // Process each test in the test suite
+            for (const test of testScript.testifact_items) {
+                if (test.execute !== 'yes') continue;
+
+                console.log(`\nExecuting test: ${test.test_name}`);
+                
+                // Start test in reporter
+                await this.reporter.startTest(test.test_name, {
+                    suite: testScript.testifact_info.testsuite_name,
+                    owner: testScript.testifact_info.testsuite_owner
+                });
+                
+                try {
+                    // Process each action in the test
+                    for (const action of test.test_actions) {
+                        try {
+                            console.log(`  Executing action: ${action.action_name}`);
+                            
+                            const actionHandler = this.actions[action.action_type];
+                            if (!actionHandler) {
+                                throw new Error(`Unknown action type: ${action.action_type}`);
+                            }
+
+                            // Convert action name from snake_case to camelCase
+                            const methodName = action.action_name.replace(/_([a-z])/g, (g) => g[1].toUpperCase());
+                            
+                            if (!actionHandler[methodName]) {
+                                throw new Error(`Unknown method ${methodName} for action type ${action.action_type}`);
+                            }
+
+                            const result = await actionHandler[methodName](action.action_config);
+                            
+                            // Log step to reporter
+                            await this.reporter.addStep(
+                                action.action_name,
+                                result.result,
+                                result.message
+                            );
+
+                            results.logs.push({ 
+                                test: test.test_name,
+                                action: action.action_name, 
+                                status: result.result === 'PASS' ? 'success' : 'failed',
+                                message: result.message 
+                            });
+
+                            if (result.result !== 'PASS' || !result.continueTest) {
+                                throw new Error(result.message);
+                            }
+
+                        } catch (error) {
+                            await this.reporter.addStep(
+                                action.action_name,
+                                'FAIL',
+                                error.message
+                            );
+
+                            results.logs.push({ 
+                                test: test.test_name,
+                                action: action.action_name, 
+                                status: 'failed', 
+                                error: error.message 
+                            });
+                            results.success = false;
+                            await this.reporter.addError(error.message, error.stack);
+                            break;
+                        }
+                    }
+                } catch (error) {
+                    console.error(`Test failed: ${test.test_name}`, error);
+                    results.success = false;
+                } finally {
+                    try {
+                        await this.actions.ui.uiCloseBrowser();
+                    } catch (error) {
+                        console.error('Error closing browser:', error);
+                    }
+                    // End test in reporter
+                    await this.reporter.endTest();
+                }
+            }
+        } catch (error) {
+            results.success = false;
+            results.logs.push({ step: 'initialization', status: 'failed', error: error.message });
+        } finally {
+            // End test suite and generate report
+            await this.reporter.endTestSuite();
         }
-        
-        await this.reporter.endTestSuite();
+
+        return results;
     }
 }
 

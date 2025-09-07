@@ -1,0 +1,30 @@
+{
+  "username_field": {
+    "locator_name": "css",
+    "locator_value": "#user-name"
+  },
+  "password_field": {
+    "locator_name": "css",
+    "locator_value": "#password"
+  },
+  "login_button": {
+    "locator_name": "css",
+    "locator_value": "#login-button"
+  },
+  "add_to_cart_button": {
+    "locator_name": "css",
+    "locator_value": ".inventory_item:first-child button.btn_inventory"
+  },
+  "burger_menu_icon": {
+    "locator_name": "css",
+    "locator_value": ".bm-burger-button"
+  },
+  "logout_link": {
+    "locator_name": "css",
+    "locator_value": "#logout_sidebar_link"
+  },
+  "cart_badge": {
+    "locator_name": "css",
+    "locator_value": ".shopping_cart_badge"
+  }
+}

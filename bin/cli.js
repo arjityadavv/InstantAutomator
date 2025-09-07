@@ -53,6 +53,7 @@ program
   }`)
   .option('-t, --test <path>', 'Path to the test script JSON file. This file contains your test cases and actions.', 'test-data/testscript.json')
   .option('-o, --objects <path>', 'Path to the object map JSON file. This file maps element identifiers to actual selectors.', 'object__map.json')
+  .option('-v, --variables <path>', 'Path to the variable map JSON file. This file contains test variables and their values.', 'variable_map.json')
   .option('-r, --report <path>', 'Directory where test execution reports will be generated. HTML reports with screenshots will be saved here.', 'test-reports')
   .option('--headless', 'Run browser in headless mode')
   .option('--browser <type>', 'Browser to use for testing (chrome, firefox, webkit)', 'chrome')
@@ -72,31 +73,21 @@ program
       console.log(`Report Path: ${reportPath}`);
       console.log(`Browser: ${options.browser}${options.headless ? ' (headless)' : ''}\n`);
 
-      await runTests(testPath, objectsPath, reportPath);
-      console.log(chalk.green('\nTest execution completed successfully!'));
-    } catch (error) {
-      console.error(chalk.red('\nTest execution failed:'), error.message);
-      console.log(chalk.yellow('\nFor help, run:'));
-      console.log('  atas --help');
-      console.log('  atas run --help');
-      process.exit(1);
-    }
-    
-    try {
-      const testPath = path.resolve(process.cwd(), options.test);
-      const objectsPath = path.resolve(process.cwd(), options.objects);
-      const reportPath = path.resolve(process.cwd(), options.report);
-
-      console.log(chalk.yellow('Using configurations:'));
-      console.log(`Test Script: ${testPath}`);
-      console.log(`Object Map: ${objectsPath}`);
-      console.log(`Report Path: ${reportPath}`);
-
-      await runTests(testPath, objectsPath, reportPath);
+      const result = await runTests(testPath, objectsPath, reportPath);
       
-      console.log(chalk.green('Test execution completed successfully!'));
+      if (result.success) {
+        console.log(chalk.green('\n✓ Test suite completed successfully'));
+      } else {
+        console.error(chalk.red('\n✗ Test suite failed with errors:'));
+        result.logs.forEach(log => {
+          if (log.status === 'failed') {
+            console.error(chalk.red(`  ${log.test || ''}: ${log.action || log.step}: ${log.error}`));
+          }
+        });
+        process.exit(1);
+      }
     } catch (error) {
-      console.error(chalk.red('Test execution failed:'), error);
+      console.error(chalk.red('\n✗ Test execution error:'), error.message);
       process.exit(1);
     }
   });

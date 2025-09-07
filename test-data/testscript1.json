@@ -1,0 +1,63 @@
+{
+  "testifact_info": {
+    "testsuite_name": "UIActions Full Coverage Test",
+    "testsuite_owner": "Arjit",
+    "test_report_path": "./test-reports",
+    "object_map_external": "./object__map.json"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Test All UIActions",
+      "description": "Covers all UIActions methods in one test",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "https://example.com"
+          }
+        },
+        {
+          "action_name": "ui_type",
+          "action_type": "ui",
+          "action_config": {
+            "element": "username_field",
+            "value": "testuser"
+          }
+        },
+        {
+          "action_name": "ui_wait",
+          "action_type": "ui",
+          "action_config": {
+            "timeout": "2000"
+          }
+        },
+        {
+          "action_name": "ui_assert_text",
+          "action_type": "ui",
+          "action_config": {
+            "element": "welcome_message",
+            "expected_text": "Welcome, testuser!",
+            "continue_on_failure": true
+          }
+        },
+        {
+          "action_name": "ui_click",
+          "action_type": "ui",
+          "action_config": {
+            "object_name": "submit_button"
+          }
+        }
+      ]
+    }
+  ]
+}

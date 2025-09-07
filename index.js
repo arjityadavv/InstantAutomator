@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const fs = require('fs').promises;
 const path = require('path');
 const Executor = require('./src/config/Executor');
@@ -33,12 +31,9 @@ async function runTests(testScriptPath, objectMapPath, reportPath) {
         if (!testScriptPath) {
             throw new Error('Test script path is required');
         }
-
-        console.log('Starting test execution...');
         
         // Read test script
         const absolutePath = path.resolve(testScriptPath);
-        console.log(`Reading test script from: ${absolutePath}`);
         const testScript = JSON.parse(
             await fs.readFile(absolutePath, 'utf8')
         );
@@ -56,20 +51,11 @@ async function runTests(testScriptPath, objectMapPath, reportPath) {
             object_map_external: objectMapPath
         });
 
-        // Execute tests
-        await executor.executeTests(testScript);
-
-        console.log('Test execution completed successfully');
+        // Execute tests and return the result
+        return await executor.executeTests(testScript);
     } catch (error) {
-        console.error('Error running tests:', error);
         throw error;
     }
-}
-
-// Execute if run directly (not imported as a module)
-if (require.main === module) {
-    const testScriptPath = process.argv[2];
-    runTests(testScriptPath);
 }
 
 module.exports = { runTests };

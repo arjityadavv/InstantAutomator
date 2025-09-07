@@ -1,5 +1,1829 @@
 [
   {
+    "timestamp": "2025-09-07T11:52:04.062Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T11:52:03.662Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 4845432832
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 6136,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T11:49:32.041Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T11:49:31.273Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 4862513152
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 6652,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T10:12:56.747Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T10:12:56.347Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6113902592
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 6322,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T10:10:44.326Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T10:10:43.905Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6374682624
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 6199,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T10:07:06.884Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T10:07:06.511Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6370942976
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 5816,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T10:06:08.768Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T10:06:08.323Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6499323904
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 8330,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T10:03:23.733Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T10:03:23.299Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6586392576
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 8821,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T09:58:10.479Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T09:58:10.043Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6937509888
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 7417,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:49:49.415Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:49:49.001Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6790619136
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 998,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:40:46.647Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:40:46.284Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6569299968
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 4494,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:40:31.190Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:40:30.826Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6521421824
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 2904,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:39:46.317Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:39:45.962Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6819041280
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1745,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:39:41.918Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:39:41.542Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6830149632
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1330,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:38:45.122Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:38:44.764Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7037165568
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1758,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:38:25.849Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:38:25.497Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6946717696
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1715,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:37:56.154Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:37:55.781Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7049887744
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1542,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:33:04.018Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:33:03.645Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7000637440
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 3188,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:27:51.103Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:27:50.737Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7049109504
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 2072,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:22:11.572Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:22:11.193Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7063281664
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1975,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:10:34.276Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:10:33.905Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6548238336
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1109,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-07T08:08:39.247Z",
+    "buildInfo": {
+      "timestamp": "2025-09-07T08:08:38.291Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6637084672
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1889,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T20:21:50.285Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T20:21:49.919Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 9087143936
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 33026,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T20:13:47.988Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T20:13:47.606Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 9055625216
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 32249,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T20:01:13.107Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T20:01:12.712Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 8964616192
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 32591,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:52:41.491Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:52:41.050Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6940352512
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "PASS",
+        "duration": 6547,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:51:52.594Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:51:52.164Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7119314944
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 32572,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:50:44.937Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:50:44.537Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6832271360
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 32200,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:50:12.314Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:50:11.907Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6802079744
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 32150,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:48:43.489Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:48:43.080Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6747123712
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 2618,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:48:40.440Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:48:39.995Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6807134208
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 2642,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:46:53.907Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:46:53.480Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7022673920
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 2386,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:46:51.071Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:46:50.620Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7037050880
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 3429,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:43:44.631Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:43:44.232Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7083974656
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 2195,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:43:42.015Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:43:41.312Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6953918464
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 7022,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:23:09.203Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:23:08.865Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7380922368
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 2431,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:23:06.413Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:23:06.044Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7315668992
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 1859,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:21:01.570Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:21:01.239Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7306752000
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 1477,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-06T19:20:59.689Z",
+    "buildInfo": {
+      "timestamp": "2025-09-06T19:20:58.720Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot",
+        "commit": "53263420d56153006b04cf25c809dc553c13f5ee",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7311073280
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Saucedemo Full Flow",
+        "suite": "Saucedemo End-to-End Test",
+        "status": "FAIL",
+        "duration": 2804,
+        "retryCount": 0,
+        "owner": "Unknown",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
     "timestamp": "2025-09-02T14:03:47.137Z",
     "buildInfo": {
       "timestamp": "2025-09-02T14:03:46.768Z",

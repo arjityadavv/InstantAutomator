@@ -1,0 +1,137 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Saucedemo Comprehensive Test",
+    "testsuite_owner": "Arjit",
+    "test_report_path": "./test-reports",
+    "object_map_external": "./objectmap2.json",
+    "variable_map_external": "./variable_map.json"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Complete Saucedemo Flow with All Actions",
+      "description": "Demonstrates all available UI actions",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no",
+            "take_screenshot": "yes"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "$url"
+          }
+        },
+        {
+          "action_name": "ui_verify_page_title",
+          "action_type": "ui",
+          "action_config": {
+            "expected_title": "Swag Labs",
+            "take_screenshot": "yes"
+          }
+        },
+        {
+          "action_name": "ui_verify_css_property",
+          "action_type": "ui",
+          "action_config": {
+            "element": "login_button",
+            "css_property": "background-color",
+            "expected_css_property_value": "rgb(226, 35, 26)"
+          }
+        },
+        {
+          "action_name": "ui_input",
+          "action_type": "ui",
+          "action_config": {
+            "element": "username_field",
+            "value": "$username"
+          }
+        },
+        {
+          "action_name": "ui_input",
+          "action_type": "ui",
+          "action_config": {
+            "element": "password_field",
+            "value": "$password",
+            "take_screenshot": "yes"
+          }
+        },
+        {
+          "action_name": "ui_click",
+          "action_type": "ui",
+          "action_config": {
+            "object_name": "login_button"
+          }
+        },
+        {
+          "action_name": "ui_wait",
+          "action_type": "ui",
+          "action_config": {
+            "timeout": "2000"
+          }
+        },
+        {
+          "action_name": "ui_click",
+          "action_type": "ui",
+          "action_config": {
+            "object_name": "add_to_cart_button"
+          }
+        },
+        {
+          "action_name": "ui_wait",
+          "action_type": "ui",
+          "action_config": {
+            "timeout": "1000"
+          }
+        },
+        {
+          "action_name": "ui_verify_text",
+          "action_type": "ui",
+          "action_config": {
+            "element": "cart_badge",
+            "expected_text": "1"
+          }
+        },
+        {
+          "action_name": "ui_click",
+          "action_type": "ui",
+          "action_config": {
+            "object_name": "burger_menu_icon"
+          }
+        },
+        {
+          "action_name": "ui_wait",
+          "action_type": "ui",
+          "action_config": {
+            "timeout": "1000"
+          }
+        },
+        {
+          "action_name": "ui_click",
+          "action_type": "ui",
+          "action_config": {
+            "object_name": "logout_link"
+          }
+        },
+        {
+          "action_name": "ui_verify_page_title",
+          "action_type": "ui",
+          "action_config": {
+            "expected_title": "Swag Labs"
+          }
+        },
+        {
+          "action_name": "ui_close_browser",
+          "action_type": "ui",
+          "action_config": {}
+        }
+      ]
+    }
+  ]
+}

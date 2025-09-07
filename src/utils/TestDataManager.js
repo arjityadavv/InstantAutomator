@@ -1,9 +1,16 @@
 const crypto = require('crypto');
 
 class TestDataManager {
-    constructor() {
+    constructor(variableMap = {}) {
         this.variables = new Map();
         this.encryptionKey = process.env.ENCRYPTION_KEY || 'default-encryption-key';
+        this.loadVariables(variableMap);
+    }
+
+    loadVariables(variableMap) {
+        Object.entries(variableMap).forEach(([key, value]) => {
+            this.setVariable(key, value);
+        });
     }
 
     setVariable(name, value) {
@@ -12,6 +19,14 @@ class TestDataManager {
 
     getVariable(name) {
         return this.variables.get(name);
+    }
+
+    resolveValue(value) {
+        if (typeof value === 'string' && value.startsWith('$')) {
+            const varName = value.substring(1);
+            return this.getVariable(varName) || value;
+        }
+        return value;
     }
 
     substituteVariables(text) {
@@ -48,10 +63,16 @@ class TestDataManager {
         const processedConfig = {};
         for (const [key, value] of Object.entries(actionConfig)) {
             if (typeof value === 'string') {
-                // Check for encrypted values (assuming they start with 'ENC:')
+                // Check for encrypted values
                 if (value.startsWith('ENC:')) {
                     processedConfig[key] = this.decrypt(value.substring(4));
-                } else {
+                } 
+                // Check for simple $variable format
+                else if (value.startsWith('$')) {
+                    processedConfig[key] = this.resolveValue(value);
+                }
+                // Check for ${variable} format
+                else {
                     processedConfig[key] = this.substituteVariables(value);
                 }
             } else if (Array.isArray(value)) {
