@@ -4,7 +4,9 @@ const NavigationActions = require('../actions/NavigationActions');
 const VerificationActions = require('../actions/VerificationActions');
 const WaitActions = require('../actions/WaitActions');
 const Reporter = require('../utils/Reporter');
+const AllureReporter = require('../utils/AllureReporter');
 const path = require('path');
+const fs = require('fs').promises;
 
 class Executor {
     constructor(config) {
@@ -16,7 +18,9 @@ class Executor {
             verification: new VerificationActions(config),
             wait: new WaitActions(config)
         };
+        // Initialize both reporters
         this.reporter = new Reporter(path.resolve(config.test_report_path));
+        this.allureReporter = new AllureReporter(config);
     }
 
     async executeTests(testScript) {
@@ -28,6 +32,7 @@ class Executor {
         try {
             // Start the test suite
             await this.reporter.startTestSuite(testScript.testifact_info.testsuite_name);
+            await this.allureReporter.startTestSuite(testScript.testifact_info.testsuite_name);
 
             // Process each test in the test suite
             for (const test of testScript.testifact_items) {
@@ -35,10 +40,15 @@ class Executor {
 
                 console.log(`\nExecuting test: ${test.test_name}`);
                 
-                // Start test in reporter
+                // Start test in both reporters
                 await this.reporter.startTest(test.test_name, {
                     suite: testScript.testifact_info.testsuite_name,
                     owner: testScript.testifact_info.testsuite_owner
+                });
+                await this.allureReporter.startTest(test.test_name, {
+                    suite: testScript.testifact_info.testsuite_name,
+                    owner: testScript.testifact_info.testsuite_owner,
+                    description: test.description
                 });
                 
                 try {
@@ -61,12 +71,31 @@ class Executor {
 
                             const result = await actionHandler[methodName](action.action_config);
                             
-                            // Log step to reporter
+                            // Log step to both reporters
                             await this.reporter.addStep(
                                 action.action_name,
                                 result.result,
                                 result.message
                             );
+                            await this.allureReporter.addStep(
+                                action.action_name,
+                                result.result,
+                                result.message
+                            );
+
+                            // Handle screenshots
+                            if ((action.action_config.take_screenshot === 'yes' || result.result === 'FAIL') && actionHandler.page) {
+                                const timestamp = new Date().toISOString().replace(/:/g, '-');
+                                const screenshotPath = path.join(
+                                    this.config.test_report_path,
+                                    'screenshots',
+                                    `${action.action_name}_${result.result.toLowerCase()}_${timestamp}.png`
+                                );
+                                await fs.mkdir(path.dirname(screenshotPath), { recursive: true });
+                                const buffer = await actionHandler.page.screenshot({ fullPage: true });
+                                await fs.writeFile(screenshotPath, buffer);
+                                await this.allureReporter.addScreenshot(action.action_name, buffer);
+                            }
 
                             results.logs.push({ 
                                 test: test.test_name,
@@ -80,11 +109,30 @@ class Executor {
                             }
 
                         } catch (error) {
+                            // Log failure to both reporters
                             await this.reporter.addStep(
                                 action.action_name,
                                 'FAIL',
                                 error.message
                             );
+                            await this.allureReporter.addStep(
+                                action.action_name,
+                                'FAIL',
+                                error.message
+                            );
+
+                            // Take failure screenshot
+                            if (this.actions.ui.page) {
+                                const buffer = await this.actions.ui.page.screenshot({ fullPage: true });
+                                const timestamp = new Date().toISOString().replace(/:/g, '-');
+                                const screenshotPath = path.join(
+                                    this.config.test_report_path,
+                                    'screenshots',
+                                    `${action.action_name}_fail_${timestamp}.png`
+                                );
+                                await fs.writeFile(screenshotPath, buffer);
+                                await this.allureReporter.addScreenshot(`${action.action_name}_failure`, buffer);
+                            }
 
                             results.logs.push({ 
                                 test: test.test_name,
@@ -94,6 +142,7 @@ class Executor {
                             });
                             results.success = false;
                             await this.reporter.addError(error.message, error.stack);
+                            await this.allureReporter.addError(error.message, error.stack);
                             break;
                         }
                     }
@@ -106,16 +155,33 @@ class Executor {
                     } catch (error) {
                         console.error('Error closing browser:', error);
                     }
-                    // End test in reporter
+                    // End test in both reporters
                     await this.reporter.endTest();
+                    await this.allureReporter.endTest();
                 }
             }
         } catch (error) {
             results.success = false;
             results.logs.push({ step: 'initialization', status: 'failed', error: error.message });
         } finally {
-            // End test suite and generate report
+            // End test suite and generate reports
             await this.reporter.endTestSuite();
+            await this.allureReporter.endTestSuite();
+
+            // Generate Allure report if tests completed
+            if (results.success) {
+                try {
+                    const allureCommand = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+                    const { spawn } = require('child_process');
+                    spawn(allureCommand, ['allure', 'generate', 
+                        path.join(this.config.test_report_path, 'allure-results'),
+                        '-o', path.join(this.config.test_report_path, 'allure-report'),
+                        '--clean'
+                    ], { stdio: 'inherit' });
+                } catch (error) {
+                    console.error('Failed to generate Allure report:', error);
+                }
+            }
         }
 
         return results;

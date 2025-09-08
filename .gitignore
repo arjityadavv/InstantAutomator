@@ -1,8 +1,16 @@
 
-# Playwright
+# Dependencies and Build
 node_modules/
+
+# Test Results and Reports
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /test-reports/
+/allure-results/
+/allure-report/
+
+# OS and Editor files
+.DS_Store
+*.log

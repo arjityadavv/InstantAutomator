@@ -2,8 +2,8 @@
   "testifact_info": {
     "testsuite_name": "DEMO TEST",
     "testsuite_owner": "Arjit",
-    "test_report_path":"C:\\Users\\yadav\\ATAS\\ATAS_Runner\\playwright_atas\\test-reports",
-    "object_map_external": "C:\\Users\\yadav\\ATAS\\ATAS_Runner\\playwright_atas\\object__map.json"
+    "test_report_path":"./test-reports",
+    "object_map_external": "./object__map.json"
   },
   "testifact_items": [
     {

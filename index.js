@@ -27,6 +27,10 @@ async function ensureDirectories(reportPath) {
 
 async function runTests(testScriptPath, objectMapPath, reportPath) {
     try {
+        console.log('Starting test execution...');
+        console.log('Test script path:', testScriptPath);
+        console.log('Object map path:', objectMapPath);
+        console.log('Report path:', reportPath);
         // Validate test script path
         if (!testScriptPath) {
             throw new Error('Test script path is required');
