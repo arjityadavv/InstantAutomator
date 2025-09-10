@@ -1,0 +1,8 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Missing Comma Test"
+    "test_report_path": "./test-reports"
+    "object_map_external": "./objectmap.json"
+  },
+  "testifact_items": []
+}

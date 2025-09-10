@@ -1,0 +1,7 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Missing Brace Test",
+    "test_report_path": "./test-reports",
+    "object_map_external": "./objectmap.json"
+  }
+  "testifact_items": []

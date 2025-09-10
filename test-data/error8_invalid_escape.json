@@ -1,0 +1,8 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Invalid Escape Test",
+    "test_report_path": "c:\test\reports",
+    "object_map_external": "./objectmap.json"
+  },
+  "testifact_items": []
+}

@@ -1,0 +1,12 @@
+{
+  "testifact_info": {
+    "testsuite_name": 123,
+    "test_report_path": true,
+    "object_map_external": "wrong.txt",
+    "browser": "safari",
+    "timeout": "5000",
+    "retries": 2.5,
+    "parallel": "yes"
+  },
+  "testifact_items": {}
+}

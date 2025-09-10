@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 const BrowserActions = require('../actions/BrowserActions');
 const ElementActions = require('../actions/ElementActions');
 const NavigationActions = require('../actions/NavigationActions');
@@ -5,6 +6,7 @@ const VerificationActions = require('../actions/VerificationActions');
 const WaitActions = require('../actions/WaitActions');
 const Reporter = require('../utils/Reporter');
 const AllureReporter = require('../utils/AllureReporter');
+const SchemaValidator = require('../utils/SchemaValidator');
 const path = require('path');
 const fs = require('fs').promises;
 
@@ -18,12 +20,26 @@ class Executor {
             verification: new VerificationActions(config),
             wait: new WaitActions(config)
         };
-        // Initialize both reporters
+        // Initialize both reporters and validator
         this.reporter = new Reporter(path.resolve(config.test_report_path));
         this.allureReporter = new AllureReporter(config);
+        this.schemaValidator = new SchemaValidator();
     }
 
-    async executeTests(testScript) {
+    async executeTests(testScript, rawJson) {
+        try {
+            // Validate both JSON syntax and schema
+            await this.schemaValidator.validateTestScript(testScript, rawJson);
+            console.log(chalk.green('✓'), 'Test script validation successful');
+        } catch (error) {
+            console.error('\n' + chalk.red('Validation Error:'));
+            console.error(error.message);
+            return {
+                success: false,
+                logs: [error.message]
+            };
+        }
+
         const results = {
             success: true,
             logs: []

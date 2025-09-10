@@ -1,6 +1,7 @@
 {
   "name": "playwright-atas",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "JSON-driven test automation framework using Playwright",
   "main": "index.js",
   "bin": {
@@ -12,14 +13,19 @@
     "allure:generate": "allure generate ./allure-results -o ./allure-report --clean",
     "allure:open": "allure open ./allure-report"
   },
-  "keywords": ["testing", "automation", "playwright"],
+  "keywords": [
+    "testing",
+    "automation",
+    "playwright"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@playwright/test": "^1.41.2",
-    "commander": "^11.1.0",
-    "chalk": "^4.1.2",
+    "ajv": "^8.17.1",
     "allure-commandline": "^2.24.1",
-    "allure-js-commons": "^2.9.2"
+    "allure-js-commons": "^2.9.2",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0"
   }
 }

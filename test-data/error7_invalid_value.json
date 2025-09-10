@@ -1,0 +1,8 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Invalid Value Test",
+    "test_report_path": function() {},
+    "object_map_external": "./objectmap.json"
+  },
+  "testifact_items": []
+}

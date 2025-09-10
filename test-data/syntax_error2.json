@@ -1,0 +1,22 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Invalid Test Suite",,
+    "test_report_path": "./test-reports",
+    "object_map_external": "./objectmap.json"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Test with Missing Comma"
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+          }
+        }
+      ]
+    }
+  ]
+}

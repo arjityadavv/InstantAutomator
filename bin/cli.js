@@ -65,27 +65,20 @@ program
       const testPath = path.resolve(options.test);
       const objectsPath = path.resolve(options.objects);
       const reportPath = path.resolve(options.report);
+      const variablesPath = options.variables ? path.resolve(options.variables) : null;
 
       // Display configuration
       console.log(chalk.yellow('\nUsing configurations:'));
       console.log(`Test Script: ${testPath}`);
       console.log(`Object Map: ${objectsPath}`);
       console.log(`Report Path: ${reportPath}`);
+      if (variablesPath) {
+        console.log(`Variable Map: ${variablesPath}`);
+      }
       console.log(`Browser: ${options.browser}${options.headless ? ' (headless)' : ''}\n`);
 
-      const result = await runTests(testPath, objectsPath, reportPath);
-      
-      if (result.success) {
-        console.log(chalk.green('\n✓ Test suite completed successfully'));
-      } else {
-        console.error(chalk.red('\n✗ Test suite failed with errors:'));
-        result.logs.forEach(log => {
-          if (log.status === 'failed') {
-            console.error(chalk.red(`  ${log.test || ''}: ${log.action || log.step}: ${log.error}`));
-          }
-        });
-        process.exit(1);
-      }
+      await runTests(testPath, objectsPath, reportPath, variablesPath);
+      console.log(chalk.green('\n✓ Test suite completed successfully'));
     } catch (error) {
       console.error(chalk.red('\n✗ Test execution error:'), error.message);
       process.exit(1);

@@ -1,0 +1,19 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Login Test",
+    "test_report_path": "./test-reports",
+    "object_map_external": "./map.json",
+    "browser": "chrome",
+    "timeout": "10000",
+    "retries": "abc",
+    "parallel": "yes"
+  },
+  "testifact_items": [
+    {
+      "name": "Invalid Login Test",
+      "action": "invalid_action",
+      "selector": "invalid selector !@#",
+      "timeout_individual": 100000
+    }
+  ]
+}

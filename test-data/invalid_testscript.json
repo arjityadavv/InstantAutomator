@@ -1,0 +1,21 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Invalid Test Suite",
+    "test_report_path": "./test-reports"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Invalid Test",
+      "execute": "maybe",
+      "test_actions": [
+        {
+          "action_name": "invalid_action",
+          "action_type": "unknown",
+          "action_config": {
+            "browser_name": "invalid_browser"
+          }
+        }
+      ]
+    }
+  ]
+}

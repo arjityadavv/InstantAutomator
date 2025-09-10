@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["testifact_info", "testifact_items"],
+  "properties": {
+    "testifact_info": {
+      "type": "object",
+      "required": ["testsuite_name", "testsuite_owner", "test_report_path", "object_map_external"],
+      "properties": {
+        "testsuite_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "testsuite_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "test_report_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "object_map_external": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variable_map_external": {
+          "type": "string"
+        }
+      }
+    },
+    "testifact_items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["test_name", "description", "execute", "test_actions"],
+        "properties": {
+          "test_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string"
+          },
+          "execute": {
+            "type": "string",
+            "enum": ["yes", "no"]
+          },
+          "test_actions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["action_name", "action_type", "action_config"],
+              "properties": {
+                "action_name": {
+                  "type": "string",
+                  "enum": [
+                    "ui_open_browser",
+                    "ui_navigate",
+                    "ui_verify_page_title",
+                    "ui_verify_css_property",
+                    "ui_input",
+                    "ui_click",
+                    "ui_wait",
+                    "ui_verify_text",
+                    "ui_close_browser"
+                  ]
+                },
+                "action_type": {
+                  "type": "string",
+                  "enum": ["ui"]
+                },
+                "action_config": {
+                  "type": "object",
+                  "properties": {
+                    "browser_name": {
+                      "type": "string",
+                      "enum": ["chrome", "firefox", "webkit"]
+                    },
+                    "sso_login": {
+                      "type": "string",
+                      "enum": ["yes", "no"]
+                    },
+                    "take_screenshot": {
+                      "type": "string",
+                      "enum": ["yes", "no"]
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "expected_title": {
+                      "type": "string"
+                    },
+                    "element": {
+                      "type": "string"
+                    },
+                    "css_property": {
+                      "type": "string"
+                    },
+                    "expected_css_property_value": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    },
+                    "object_name": {
+                      "type": "string"
+                    },
+                    "timeout": {
+                      "type": "string",
+                      "pattern": "^[0-9]+$"
+                    },
+                    "expected_text": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

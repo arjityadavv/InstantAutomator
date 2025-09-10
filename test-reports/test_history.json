@@ -1,5 +1,637 @@
 [
   {
+    "timestamp": "2025-09-10T15:08:17.023Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T15:08:16.540Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6190653440
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1184,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown",
+        "error": "Failed to navigate: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"{{var.url}}\", waiting until \"load\"\u001b[22m\n",
+        "stackTrace": "Error: Failed to navigate: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"{{var.url}}\", waiting until \"load\"\u001b[22m\n\n    at Executor.executeTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\src\\config\\Executor.js:124:39)\n    at async runTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\index.js:92:25)\n    at async Command.<anonymous> (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\bin\\cli.js:80:7)"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T15:03:01.657Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T15:03:01.179Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6169640960
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1213,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown",
+        "error": "Failed to navigate: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"{{var.url}}\", waiting until \"load\"\u001b[22m\n",
+        "stackTrace": "Error: Failed to navigate: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"{{var.url}}\", waiting until \"load\"\u001b[22m\n\n    at Executor.executeTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\src\\config\\Executor.js:124:39)\n    at async runTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\index.js:92:25)\n    at async Command.<anonymous> (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\bin\\cli.js:80:7)"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T15:02:09.290Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T15:02:08.844Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6414983168
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 1180,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown",
+        "error": "Failed to navigate: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"{{var.url}}\", waiting until \"load\"\u001b[22m\n",
+        "stackTrace": "Error: Failed to navigate: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"{{var.url}}\", waiting until \"load\"\u001b[22m\n\n    at Executor.executeTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\src\\config\\Executor.js:124:39)\n    at async runTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\index.js:92:25)\n    at async Command.<anonymous> (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\bin\\cli.js:80:7)"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T15:00:31.946Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T15:00:31.369Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6390034432
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 34341,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown",
+        "error": "Failed to click: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.inventory_item:first-child button.btn_inventory')\u001b[22m\n",
+        "stackTrace": "Error: Failed to click: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.inventory_item:first-child button.btn_inventory')\u001b[22m\n\n    at Executor.executeTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\src\\config\\Executor.js:124:39)\n    at async runTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\index.js:92:25)\n    at async Command.<anonymous> (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\bin\\cli.js:80:7)"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T14:58:17.541Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T14:58:17.033Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6171942912
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 7896,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T14:57:46.940Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T14:57:46.434Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6337064960
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 3067,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T14:32:05.000Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T14:32:04.586Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6199021568
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "FAIL",
+        "duration": 3408,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T14:31:41.556Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T14:31:41.134Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6133403648
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 6141,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T14:28:08.979Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T14:28:08.038Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5935529984
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 6973,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-08T18:24:20.534Z",
+    "buildInfo": {
+      "timestamp": "2025-09-08T18:24:19.851Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 4855025664
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 7301,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-08T13:55:22.088Z",
+    "buildInfo": {
+      "timestamp": "2025-09-08T13:55:21.669Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5306572800
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 6078,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-08T13:54:00.956Z",
+    "buildInfo": {
+      "timestamp": "2025-09-08T13:54:00.540Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5203210240
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 6772,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-08T13:53:16.231Z",
+    "buildInfo": {
+      "timestamp": "2025-09-08T13:53:15.018Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "pilot_tgz",
+        "commit": "5487703dd96d8f8dc8fa5a79318c2aec98e1dbaa",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5319598080
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Complete Saucedemo Flow with All Actions",
+        "suite": "Saucedemo Comprehensive Test",
+        "status": "PASS",
+        "duration": 7881,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
     "timestamp": "2025-09-07T17:47:57.384Z",
     "buildInfo": {
       "timestamp": "2025-09-07T17:47:56.412Z",
