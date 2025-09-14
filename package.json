@@ -1,11 +1,11 @@
 {
-  "name": "playwright-atas",
+  "name": "playwright-snap",
   "version": "1.0.0",
   "type": "commonjs",
   "description": "JSON-driven test automation framework using Playwright",
   "main": "index.js",
   "bin": {
-    "atas": "./bin/cli.js"
+    "snap": "./bin/cli.js"
   },
   "scripts": {
     "test": "node index.js",

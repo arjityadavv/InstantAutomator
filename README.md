@@ -1,6 +1,6 @@
-# InstantAutomator
+# SNAP - Simple No-code Automation Platform
 
-InstantAutomator is a JSON-driven test automation framework built on top of Playwright. It allows you to write and execute automated tests using simple JSON configurations, making test automation accessible even without extensive programming knowledge.
+SNAP is a JSON-driven test automation framework built on top of Playwright. It allows you to write and execute automated tests using simple JSON configurations, making test automation accessible even without extensive programming knowledge.
 
 ## Features
 
@@ -11,6 +11,8 @@ InstantAutomator is a JSON-driven test automation framework built on top of Play
 - 🗺️ Object map support for better maintainability
 - 💻 Cross-platform support (Windows & macOS)
 - 🔄 Easy test execution and management
+- 🔗 **NEW**: Enhanced variable and object reference syntax with `{{var.keyName}}` and `{{obj.keyName}}`
+- ⬅️ Full backward compatibility with legacy syntax
 
 ## Prerequisites
 
@@ -24,19 +26,19 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 ```bash
 # Windows
-git clone https://github.com/arjityadavv/InstantAutomator.git
+git clone https://github.com/arjityadavv/SNAP.git
 
 # macOS
-git clone https://github.com/arjityadavv/InstantAutomator.git
+git clone https://github.com/arjityadavv/SNAP.git
 ```
 
 2. Navigate to the project directory:
 ```bash
 # Windows
-cd InstantAutomator
+cd SNAP
 
 # macOS
-cd InstantAutomator
+cd SNAP
 ```
 
 3. Install dependencies:
@@ -52,7 +54,7 @@ npx playwright install
 ## Project Structure
 
 ```
-InstantAutomator/
+SNAP/
 ├── bin/                    # CLI executable
 ├── src/                    # Source code
 │   ├── actions/           # UI and API actions
@@ -114,10 +116,10 @@ InstantAutomator/
 
 ```bash
 # Windows
-atas run -t "./test-data/testscript.json" -o "./object__map.json" -r "./test-reports"
+snap run -t "./test-data/testscript.json" -o "./object__map.json" -r "./test-reports"
 
 # macOS
-./node_modules/.bin/atas run -t "./test-data/testscript.json" -o "./object__map.json" -r "./test-reports"
+./node_modules/.bin/snap run -t "./test-data/testscript.json" -o "./object__map.json" -r "./test-reports"
 ```
 
 ## Command Line Options
@@ -145,6 +147,32 @@ Reports are generated in HTML format and can be found in the `test-reports` dire
 5. Regularly backup test scripts and object maps
 6. Use version control for managing test assets
 
+## Enhanced Variable and Object Reference Syntax
+
+SNAP now supports enhanced syntax for better readability and consistency:
+
+### New Syntax (Recommended)
+- **Variables**: `{{var.keyName}}` - Reference variables from your variable map
+- **Objects**: `{{obj.keyName}}` - Reference elements from your object map
+
+### Example:
+```json
+{
+  "action_name": "ui_input",
+  "action_type": "ui",
+  "action_config": {
+    "element": "{{obj.username_field}}",
+    "value": "{{var.username}}"
+  }
+}
+```
+
+### Legacy Syntax (Still Supported)
+- **Variables**: `$variableName` or `${variableName}`
+- **Objects**: Direct key reference
+
+For detailed usage and migration guide, see [Variable and Object Reference Guide](./docs/VARIABLE_OBJECT_REFERENCE.md)
+
 ## Troubleshooting
 
 1. If tests fail to start:
@@ -158,7 +186,7 @@ Reports are generated in HTML format and can be found in the `test-reports` dire
    - Update selectors as needed
 
 3. For permission issues on macOS:
-   - Run `chmod +x ./node_modules/.bin/atas`
+   - Run `chmod +x ./node_modules/.bin/snap`
    - Use sudo if necessary for browser installations
 
 ## Contributing

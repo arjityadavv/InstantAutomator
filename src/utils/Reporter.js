@@ -437,22 +437,30 @@ class Reporter {
                 });
 
                 const trendChart = echarts.init(document.getElementById('trendChart'));
+                const trendsData = ${JSON.stringify(data.trends || { passRate: [] })};
+                const passRateData = trendsData.passRate || [];
+                
                 trendChart.setOption({
                     xAxis: {
                         type: 'category',
-                        data: ${JSON.stringify(data.trends.passRate.map(d => d.date.split('T')[0]))}
+                        data: passRateData.map(d => d.date ? d.date.split('T')[0] : 'Unknown')
                     },
                     yAxis: {
                         type: 'value',
                         max: 100
                     },
                     series: [{
-                        data: ${JSON.stringify(data.trends.passRate.map(d => d.rate))},
+                        data: passRateData.map(d => d.rate || 0),
                         type: 'line',
                         smooth: true
                     }],
                     tooltip: {
-                        trigger: 'axis'
+                        trigger: 'axis',
+                        formatter: function(params) {
+                            if (params.length === 0) return '';
+                            const point = params[0];
+                            return point.name + '<br/>Pass Rate: ' + point.value.toFixed(1) + '%';
+                        }
                     }
                 });
             </script>

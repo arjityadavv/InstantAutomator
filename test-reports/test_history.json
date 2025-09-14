@@ -1,5 +1,438 @@
 [
   {
+    "timestamp": "2025-09-14T10:23:06.036Z",
+    "buildInfo": {
+      "timestamp": "2025-09-14T10:23:05.576Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "object_variable_regex_addition",
+        "commit": "d50992c29bd4225710480217b05865e52f18ccb6",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5625577472
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check Facebook",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 2694,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check Google",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 2157,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-14T10:19:18.880Z",
+    "buildInfo": {
+      "timestamp": "2025-09-14T10:19:18.430Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "object_variable_regex_addition",
+        "commit": "d50992c29bd4225710480217b05865e52f18ccb6",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 5946654720
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Login Check Facebook",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 3746,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      },
+      {
+        "name": "Login Check Google",
+        "suite": "DEMO TEST",
+        "status": "PASS",
+        "duration": 2047,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-14T10:17:39.984Z",
+    "buildInfo": {
+      "timestamp": "2025-09-14T10:17:38.527Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "object_variable_regex_addition",
+        "commit": "d50992c29bd4225710480217b05865e52f18ccb6",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 6048575488
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Test New {{var.}} and {{obj.}} Syntax",
+        "suite": "New Variable and Object Reference Test",
+        "status": "PASS",
+        "duration": 7255,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-11T12:31:50.631Z",
+    "buildInfo": {
+      "timestamp": "2025-09-11T12:31:50.256Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "object_variable_regex_addition",
+        "commit": "d50992c29bd4225710480217b05865e52f18ccb6",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 7541268480
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 1,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "New Syntax Test",
+        "suite": "Syntax Compatibility Test",
+        "status": "PASS",
+        "duration": 2732,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      },
+      {
+        "name": "Legacy Syntax Test",
+        "suite": "Syntax Compatibility Test",
+        "status": "FAIL",
+        "duration": 903,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown",
+        "error": "Failed to navigate: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"$url\", waiting until \"load\"\u001b[22m\n",
+        "stackTrace": "Error: Failed to navigate: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"$url\", waiting until \"load\"\u001b[22m\n\n    at Executor.executeTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\src\\config\\Executor.js:124:39)\n    at async runTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\index.js:92:25)\n    at async Command.<anonymous> (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\bin\\cli.js:80:7)"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-11T12:28:48.119Z",
+    "buildInfo": {
+      "timestamp": "2025-09-11T12:28:47.171Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "object_variable_regex_addition",
+        "commit": "d50992c29bd4225710480217b05865e52f18ccb6",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 8619655168
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "New Syntax Test",
+        "suite": "Syntax Compatibility Test",
+        "status": "PASS",
+        "duration": 2303,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      },
+      {
+        "name": "Legacy Syntax Test",
+        "suite": "Syntax Compatibility Test",
+        "status": "PASS",
+        "duration": 1388,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T17:53:37.656Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T17:53:37.264Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "object_variable_regex_addition",
+        "commit": "d50992c29bd4225710480217b05865e52f18ccb6",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 4410736640
+        }
+      }
+    },
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "New Syntax Test",
+        "suite": "Syntax Compatibility Test",
+        "status": "PASS",
+        "duration": 2612,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      },
+      {
+        "name": "Legacy Syntax Test",
+        "suite": "Syntax Compatibility Test",
+        "status": "PASS",
+        "duration": 1254,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T17:52:53.260Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T17:52:52.879Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "object_variable_regex_addition",
+        "commit": "d50992c29bd4225710480217b05865e52f18ccb6",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 4515131392
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Test New {{var.}} and {{obj.}} Syntax",
+        "suite": "New Variable and Object Reference Test",
+        "status": "PASS",
+        "duration": 7363,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-09-10T17:51:44.020Z",
+    "buildInfo": {
+      "timestamp": "2025-09-10T17:51:43.592Z",
+      "environment": {
+        "os": {
+          "type": "Windows_NT",
+          "platform": "win32",
+          "release": "10.0.26100",
+          "arch": "x64"
+        },
+        "node": "v20.10.0"
+      },
+      "git": {
+        "branch": "object_variable_regex_addition",
+        "commit": "d50992c29bd4225710480217b05865e52f18ccb6",
+        "author": "Arjit Yadav"
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.7339.16 Safari/537.36"
+      },
+      "system": {
+        "hostname": "ASUS",
+        "cpus": 8,
+        "memory": {
+          "total": 17008959488,
+          "free": 4654354432
+        }
+      }
+    },
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "testResults": [
+      {
+        "name": "Test New {{var.}} and {{obj.}} Syntax",
+        "suite": "New Variable and Object Reference Test",
+        "status": "FAIL",
+        "duration": 2302,
+        "retryCount": 0,
+        "owner": "Arjit",
+        "component": "Unknown",
+        "error": "Failed to click: Element '#login-button' not found in object map",
+        "stackTrace": "Error: Failed to click: Element '#login-button' not found in object map\n    at Executor.executeTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\src\\config\\Executor.js:124:39)\n    at async runTests (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\index.js:92:25)\n    at async Command.<anonymous> (C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\bin\\cli.js:80:7)"
+      }
+    ]
+  },
+  {
     "timestamp": "2025-09-10T15:08:17.023Z",
     "buildInfo": {
       "timestamp": "2025-09-10T15:08:16.540Z",

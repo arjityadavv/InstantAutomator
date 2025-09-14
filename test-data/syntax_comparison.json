@@ -1,0 +1,111 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Syntax Compatibility Test",
+    "testsuite_owner": "Arjit",
+    "test_report_path": "./test-reports",
+    "object_map_external": "./objectmap2.json",
+    "variable_map_external": "./variable_map.json"
+  },
+  "testifact_items": [
+    {
+      "test_name": "New Syntax Test",
+      "description": "Testing {{var.keyName}} and {{obj.keyName}} syntax",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "{{var.url}}"
+          }
+        },
+        {
+          "action_name": "ui_input",
+          "action_type": "ui",
+          "action_config": {
+            "element": "{{obj.username_field}}",
+            "value": "{{var.username}}"
+          }
+        },
+        {
+          "action_name": "ui_input",
+          "action_type": "ui",
+          "action_config": {
+            "element": "{{obj.password_field}}",
+            "value": "{{var.password}}"
+          }
+        },
+        {
+          "action_name": "ui_click",
+          "action_type": "ui",
+          "action_config": {
+            "object_name": "{{obj.login_button}}"
+          }
+        },
+        {
+          "action_name": "ui_close_browser",
+          "action_type": "ui",
+          "action_config": {}
+        }
+      ]
+    },
+    {
+      "test_name": "Legacy Syntax Test",
+      "description": "Testing legacy $variable syntax for backward compatibility",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "$url"
+          }
+        },
+        {
+          "action_name": "ui_input",
+          "action_type": "ui",
+          "action_config": {
+            "element": "username_field",
+            "value": "$username"
+          }
+        },
+        {
+          "action_name": "ui_input",
+          "action_type": "ui",
+          "action_config": {
+            "element": "password_field",
+            "value": "$password"
+          }
+        },
+        {
+          "action_name": "ui_click",
+          "action_type": "ui",
+          "action_config": {
+            "object_name": "login_button"
+          }
+        },
+        {
+          "action_name": "ui_close_browser",
+          "action_type": "ui",
+          "action_config": {}
+        }
+      ]
+    }
+  ]
+}

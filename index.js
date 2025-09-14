@@ -6,10 +6,10 @@ const JsonValidator = require('./src/utils/JsonValidator');
 
 function printUsage() {
     console.log(`
-Usage: atas <path-to-testscript.json>
+Usage: snap <path-to-testscript.json>
 
 Example:
-  atas ./test-data/testscript.json
+  snap ./test-data/testscript.json
 `);
 }
 

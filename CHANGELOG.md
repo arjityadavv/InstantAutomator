@@ -1,9 +1,27 @@
 # Changelog
 
-All notable changes to InstantAutomator will be documented in this file.
+All notable changes to SNAP (Simple No-code Automation Platform) will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.4.0] - 2025-09-10 - Enhanced Variable and Object Reference Syntax
+### Added
+- Enhanced syntax for external variable references: `{{var.keyName}}`
+- Enhanced syntax for external object map references: `{{obj.keyName}}`
+- ObjectMapResolver utility for consistent object reference handling
+- TestDataManager improvements for better variable and object substitution
+- Full backward compatibility with legacy syntax (`$variable` and direct object keys)
+
+### Enhanced
+- Improved test script readability and maintainability
+- Better separation of concerns between variables and object references
+- More consistent reference syntax across the framework
+
+### Documentation
+- Added comprehensive Variable and Object Reference Guide
+- Updated README with new syntax examples
+- Migration guide for transitioning from legacy to new syntax
 
 ## [1.3.0] - 2025-09-08 - Enhanced Reporting and Configuration
 ### Added
@@ -62,4 +80,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-*Note: This changelog documents the currently implemented features of InstantAutomator.*
+*Note: This changelog documents the currently implemented features of SNAP (Simple No-code Automation Platform).*

@@ -6,16 +6,16 @@ const chalk = require('chalk');
 const { runTests } = require('../index');
 
 program
-  .name('atas')
-  .description(`Playwright ATAS Test Runner - JSON-driven UI Test Automation Framework
+  .name('snap')
+  .description(`Playwright SNAP Test Runner - Simple No-code Automation Platform
 
   Example usage:
-    $ atas run -t "./test-data/testscript.json" -o "./object__map.json" -r "./test-reports"
-    $ atas run --test "path/to/testscript.json" --objects "path/to/objectmap.json" --report "path/to/reports"
+    $ snap run -t "./test-data/testscript.json" -o "./object__map.json" -r "./test-reports"
+    $ snap run --test "path/to/testscript.json" --objects "path/to/objectmap.json" --report "path/to/reports"
     
   For more information:
-    - Run 'atas run --help' for detailed test execution options
-    - Visit https://github.com/arjityadavv/ATAS_Runner for documentation`)
+    - Run 'snap run --help' for detailed test execution options
+    - Visit https://github.com/arjityadavv/SNAP_Runner for documentation`)
   .version('1.0.0');
 
 program
@@ -23,7 +23,7 @@ program
   .description(`Run automated test suite
   
   This command executes the test cases defined in your test script JSON file.
-  The test script should follow the ATAS format with test cases and actions.
+  The test script should follow the SNAP format with test cases and actions.
   
   Required files:
   - Test Script JSON: Defines your test cases and actions
@@ -92,8 +92,8 @@ program.on('command:*', () => {
   console.log('  run     Run test suite');
   console.log('  help    Show help information\n');
   console.log('For more details, run:');
-  console.log('  atas --help');
-  console.log('  atas run --help\n');
+  console.log('  snap --help');
+  console.log('  snap run --help\n');
   process.exit(1);
 });
 

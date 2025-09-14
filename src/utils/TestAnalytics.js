@@ -83,8 +83,6 @@ class TestAnalytics {
             stability: this.calculateStability(recentRuns),
             failurePatterns: this.analyzeFailurePatterns(recentRuns)
         };
-
-        return trends;
     }
 
     calculateStability(runs) {

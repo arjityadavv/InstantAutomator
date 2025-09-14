@@ -61,19 +61,14 @@ class BrowserActions extends BaseActions {
             if (!this.page) {
                 throw new Error('No active browser page');
             }
-            // Handle variable substitution for URL
-            let url = actionConfig.url;
-            if (url.startsWith('$') && this.variableMap) {
-                const varName = url.substring(1);
-                if (!this.variableMap[varName]) {
-                    throw new Error(`Variable ${varName} not found in variable map`);
-                }
-                url = this.variableMap[varName];
-            }
-            await this.page.goto(url);
+            
+            // Process config to handle {{var.keyName}} and {{obj.keyName}} substitutions
+            const processedConfig = this.processConfig(actionConfig);
+            
+            await this.page.goto(processedConfig.url);
             const result = {
                 result: 'PASS',
-                message: `Navigated to ${url} successfully`,
+                message: `Navigated to ${processedConfig.url} successfully`,
                 continueTest: true
             };
             return await this.handleScreenshot('ui_navigate', actionConfig, result);
@@ -91,12 +86,16 @@ class BrowserActions extends BaseActions {
             if (!this.page) {
                 throw new Error('No active browser page');
             }
+            
+            // Process config to handle {{var.keyName}} and {{obj.keyName}} substitutions
+            const processedConfig = this.processConfig(actionConfig);
+            
             // Here we assume the object_name maps to a selector in the object map
-            const selector = this.getSelector(actionConfig.object_name);
+            const selector = this.getSelector(processedConfig.object_name);
             await this.page.click(selector);
             const result = {
                 result: 'PASS',
-                message: `Clicked ${actionConfig.object_name} successfully`,
+                message: `Clicked ${processedConfig.object_name} successfully`,
                 continueTest: true
             };
             return await this.handleScreenshot('ui_click', actionConfig, result);
@@ -114,20 +113,15 @@ class BrowserActions extends BaseActions {
             if (!this.page) {
                 throw new Error('No active browser page');
             }
-            const selector = this.getSelector(actionConfig.element);
-            // Handle variable substitution
-            let value = actionConfig.value;
-            if (value.startsWith('$') && this.variableMap) {
-                const varName = value.substring(1);
-                if (!this.variableMap[varName]) {
-                    throw new Error(`Variable ${varName} not found in variable map`);
-                }
-                value = this.variableMap[varName];
-            }
-            await this.page.fill(selector, value);
+            
+            // Process config to handle {{var.keyName}} and {{obj.keyName}} substitutions
+            const processedConfig = this.processConfig(actionConfig);
+            
+            const selector = this.getSelector(processedConfig.element);
+            await this.page.fill(selector, processedConfig.value);
             const result = {
                 result: 'PASS',
-                message: `Input entered in ${actionConfig.element} successfully`,
+                message: `Input entered in ${processedConfig.element} successfully`,
                 continueTest: true
             };
             return await this.handleScreenshot('ui_input', actionConfig, result);

@@ -1,11 +1,13 @@
 const path = require('path');
 const fs = require('fs');
+const TestDataManager = require('../utils/TestDataManager');
 
 class BaseActions {
     constructor(config) {
         this.config = config;
         this.objectMap = null;
         this.variableMap = null;
+        this.testDataManager = null;
         
         // Load object map
         if (config && config.object_map_external) {
@@ -14,6 +16,7 @@ class BaseActions {
                 this.objectMap = JSON.parse(fs.readFileSync(objectMapPath, 'utf8'));
             } catch (e) {
                 console.error('Failed to load object map:', e);
+                this.objectMap = {};
             }
         }
 
@@ -24,8 +27,12 @@ class BaseActions {
                 this.variableMap = JSON.parse(fs.readFileSync(variableMapPath, 'utf8'));
             } catch (e) {
                 console.error('Failed to load variable map:', e);
+                this.variableMap = {};
             }
         }
+
+        // Initialize TestDataManager with both variable and object maps
+        this.testDataManager = new TestDataManager(this.variableMap || {}, this.objectMap || {});
     }
 
     getSelector(elementKey) {
@@ -40,6 +47,11 @@ class BaseActions {
             return `xpath=${element.locator_value}`;
         }
         return element.locator_value;
+    }
+
+    // Process action config to substitute variables and object map references
+    processConfig(actionConfig) {
+        return this.testDataManager.processActionConfig(actionConfig);
     }
 }
 

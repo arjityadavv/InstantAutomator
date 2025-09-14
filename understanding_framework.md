@@ -1,4 +1,4 @@
-# Understanding InstantAutomator Framework
+# Understanding SNAP Framework (Simple No-code Automation Platform)
 
 ## Key Questions and Answers
 

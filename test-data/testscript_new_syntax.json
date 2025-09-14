@@ -1,0 +1,86 @@
+{
+  "testifact_info": {
+    "testsuite_name": "New Variable and Object Reference Test",
+    "testsuite_owner": "Arjit",
+    "test_report_path": "./test-reports",
+    "object_map_external": "./objectmap2.json",
+    "variable_map_external": "./variable_map.json"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Test New {{var.}} and {{obj.}} Syntax",
+      "description": "Demonstrates new variable and object reference syntax",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no",
+            "take_screenshot": "yes"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "{{var.url}}"
+          }
+        },
+        {
+          "action_name": "ui_verify_page_title",
+          "action_type": "ui",
+          "action_config": {
+            "expected_title": "Swag Labs",
+            "take_screenshot": "yes"
+          }
+        },
+        {
+          "action_name": "ui_input",
+          "action_type": "ui",
+          "action_config": {
+            "element": "username_field",
+            "value": "{{var.username}}"
+          }
+        },
+        {
+          "action_name": "ui_input",
+          "action_type": "ui",
+          "action_config": {
+            "element": "password_field",
+            "value": "{{var.password}}",
+            "take_screenshot": "yes"
+          }
+        },
+        {
+          "action_name": "ui_click",
+          "action_type": "ui",
+          "action_config": {
+            "object_name": "{{obj.login_button}}"
+          }
+        },
+        {
+          "action_name": "ui_wait",
+          "action_type": "ui",
+          "action_config": {
+            "timeout": "3000"
+          }
+        },
+        {
+          "action_name": "ui_verify_page_title",
+          "action_type": "ui",
+          "action_config": {
+            "expected_title": "Swag Labs",
+            "take_screenshot": "yes"
+          }
+        },
+        {
+          "action_name": "ui_close_browser",
+          "action_type": "ui",
+          "action_config": {}
+        }
+      ]
+    }
+  ]
+}
