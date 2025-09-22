@@ -1,0 +1,46 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Visual Testing Demo",
+    "testsuite_owner": "Test User",
+    "test_report_path": "./test-reports"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Visual Testing Test",
+      "description": "Test the new visual testing functionality",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no"
+          },
+          "action_parameters": {
+            "take_screenshot": "yes",
+            "visual_check": "yes"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "https://example.com"
+          },
+          "action_parameters": {
+            "visual_check": "yes",
+            "take_screenshot": "yes"
+          }
+        },
+        {
+          "action_name": "ui_wait",
+          "action_type": "ui",
+          "action_config": {
+            "timeout": "2000"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -69,13 +69,19 @@ class Executor {
                 
                 try {
                     // Process each action in the test
-                    for (const action of test.test_actions) {
+                    for (let actionIndex = 0; actionIndex < test.test_actions.length; actionIndex++) {
+                        const action = test.test_actions[actionIndex];
                         try {
-                            console.log(`  Executing action: ${action.action_name}`);
+                            console.log(`  Executing action ${actionIndex + 1}/${test.test_actions.length}: ${action.action_name}`);
                             
                             const actionHandler = this.actions[action.action_type];
                             if (!actionHandler) {
                                 throw new Error(`Unknown action type: ${action.action_type}`);
+                            }
+
+                            // Set current context for visual testing baseline naming
+                            if (actionHandler.setCurrentContext) {
+                                actionHandler.setCurrentContext(test.test_name, action.action_name, actionIndex);
                             }
 
                             // Convert action name from snake_case to camelCase
@@ -85,7 +91,12 @@ class Executor {
                                 throw new Error(`Unknown method ${methodName} for action type ${action.action_type}`);
                             }
 
-                            const result = await actionHandler[methodName](action.action_config);
+                            // Pass action_config, action_parameters, and action index
+                            const result = await actionHandler[methodName](
+                                action.action_config,
+                                action.action_parameters,
+                                actionIndex
+                            );
                             
                             // Log step to both reporters
                             await this.reporter.addStep(
@@ -99,7 +110,50 @@ class Executor {
                                 result.message
                             );
 
-                            // Handle screenshots
+                            // Handle visual testing (only if enabled and requested)
+                            const visualCheckRequested = action.action_config?.visual_check === 'yes' || 
+                                                        action.action_parameters?.visual_check === 'yes';
+                            
+                            if (visualCheckRequested && actionHandler.page) {
+                                if (this.config.visual_testing_enabled && actionHandler.visualTesting) {
+                                    // Use the existing VisualTesting instance from BaseActions
+                                    const visualResult = await actionHandler.visualTesting.performVisualCheck(
+                                    actionHandler.page,
+                                    test.test_name,
+                                    action.action_name,
+                                    action.action_config,
+                                    actionIndex
+                                );
+                                
+                                // Add visual testing attachments to Allure if test failed
+                                if (visualResult.visualFailure) {
+                                    await this.allureReporter.addVisualTestingAttachments(visualResult);
+                                    
+                                    // Mark step as failed for visual differences
+                                    await this.allureReporter.addStep(
+                                        `Visual Check: ${action.action_name}`,
+                                        'FAIL',
+                                        visualResult.message
+                                    );
+                                    
+                                    console.log(`❌ Visual test failed: ${visualResult.message}`);
+                                } else {
+                                    // Visual test passed or baseline created
+                                    await this.allureReporter.addStep(
+                                        `Visual Check: ${action.action_name}`,
+                                        'PASS',
+                                        visualResult.message
+                                    );
+                                    
+                                    console.log(`✅ Visual test: ${visualResult.message}`);
+                                }
+                                } else {
+                                    // Visual testing is disabled but requested
+                                    console.log(`⚠️  Visual testing requested but disabled for optimization - skipping visual check for ${action.action_name}`);
+                                }
+                            }
+
+                            // Handle regular screenshots
                             if ((action.action_config.take_screenshot === 'yes' || result.result === 'FAIL') && actionHandler.page) {
                                 const timestamp = new Date().toISOString().replace(/:/g, '-');
                                 const screenshotPath = path.join(
@@ -184,19 +238,28 @@ class Executor {
             await this.reporter.endTestSuite();
             await this.allureReporter.endTestSuite();
 
-            // Generate Allure report if tests completed
-            if (results.success) {
+            // Generate Allure report if allure-results directory exists
+            const allureResultsPath = path.join(this.config.test_report_path, 'allure-results');
+            const fs = require('fs');
+            
+            if (fs.existsSync(allureResultsPath)) {
                 try {
+                    console.log('📊 Generating Allure report...');
                     const allureCommand = process.platform === 'win32' ? 'npx.cmd' : 'npx';
-                    const { spawn } = require('child_process');
-                    spawn(allureCommand, ['allure', 'generate', 
-                        path.join(this.config.test_report_path, 'allure-results'),
-                        '-o', path.join(this.config.test_report_path, 'allure-report'),
-                        '--clean'
-                    ], { stdio: 'inherit' });
+                    const { execSync } = require('child_process');
+                    
+                    execSync(`${allureCommand} allure generate "${allureResultsPath}" -o "${path.join(this.config.test_report_path, 'allure-report')}" --clean`, {
+                        stdio: 'inherit',
+                        cwd: process.cwd()
+                    });
+                    
+                    console.log(`📄 Allure report generated: ${path.join(this.config.test_report_path, 'allure-report', 'index.html')}`);
                 } catch (error) {
-                    console.error('Failed to generate Allure report:', error);
+                    console.log('⚠️  Allure report directory was not found. Check if SNAP generated the report properly.');
+                    console.log('💡 Make sure allure-commandline is installed: npm install -g allure-commandline');
                 }
+            } else {
+                console.log('⚠️  Allure report directory was not found. Check if SNAP generated the report properly.');
             }
         }
 

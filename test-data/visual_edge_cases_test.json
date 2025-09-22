@@ -1,0 +1,158 @@
+{
+    "testifact_info": {
+        "testsuite_name": "Visual Testing Edge Cases Demo",
+        "testsuite_info": "Test cases to demonstrate proper baseline generation for different scenarios",
+        "testsuite_id": "edge_cases_001",
+        "testsuite_owner": "Copilot Demo",
+        "test_report_path": "./test-reports"
+    },
+    "testifact_items": [
+        {
+            "test_name": "Multiple Navigation Test",
+            "description": "Test multiple navigations to different URLs",
+            "execute": "yes",
+            "test_actions": [
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_open_browser",
+                    "action_config": {
+                        "browser_name": "chrome"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_navigate",
+                    "action_config": {
+                        "url": "https://www.google.com"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_navigate",
+                    "action_config": {
+                        "url": "https://www.github.com"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_navigate",
+                    "action_config": {
+                        "url": "https://www.stackoverflow.com"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                }
+            ]
+        },
+        {
+            "test_name": "Same Action Different Elements Test",
+            "description": "Test same click action on different elements",
+            "execute": "yes",
+            "test_actions": [
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_open_browser",
+                    "action_config": {
+                        "browser_name": "chrome"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_navigate",
+                    "action_config": {
+                        "url": "https://example.com"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_click",
+                    "action_config": {
+                        "element": "//button[@id='login']"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_click",
+                    "action_config": {
+                        "element": "//button[@id='signup']"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_click",
+                    "action_config": {
+                        "element": "//a[@class='nav-link']"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes",
+                        "take_screenshot": "yes"
+                    }
+                }
+            ]
+        },
+        {
+            "test_name": "Complex Context Test",
+            "description": "Test with mixed actions and different contexts",
+            "execute": "yes",
+            "test_actions": [
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_open_browser",
+                    "action_config": {
+                        "browser_name": "chrome"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_navigate",
+                    "action_config": {
+                        "url": "https://www.google.com"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_input",
+                    "action_config": {
+                        "element": "//input[@name='q']",
+                        "text": "playwright automation"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                },
+                {
+                    "action_type": "ui",
+                    "action_name": "ui_navigate",
+                    "action_config": {
+                        "url": "https://www.github.com"
+                    },
+                    "action_parameters": {
+                        "visual_check": "yes"
+                    }
+                }
+            ]
+        }
+    ]
+}

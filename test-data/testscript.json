@@ -2,8 +2,10 @@
   "testifact_info": {
     "testsuite_name": "DEMO TEST",
     "testsuite_owner": "Arjit",
-    "test_report_path":"./test-reports",
-    "object_map_external": "./object__map.json"
+    "test_report_path":"./test_report.json",
+    "object_map_external": "./HELLO.json",
+    "variable_map_external": "./HELLO.json"
+    
   },
   "testifact_items": [
     {

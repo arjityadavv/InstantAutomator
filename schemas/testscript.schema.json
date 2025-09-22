@@ -5,7 +5,7 @@
   "properties": {
     "testifact_info": {
       "type": "object",
-      "required": ["testsuite_name", "testsuite_owner", "test_report_path", "object_map_external"],
+      "required": ["testsuite_name", "testsuite_owner", "test_report_path"],
       "properties": {
         "testsuite_name": {
           "type": "string",
@@ -82,10 +82,6 @@
                       "type": "string",
                       "enum": ["yes", "no"]
                     },
-                    "take_screenshot": {
-                      "type": "string",
-                      "enum": ["yes", "no"]
-                    },
                     "url": {
                       "type": "string"
                     },
@@ -107,12 +103,25 @@
                     "object_name": {
                       "type": "string"
                     },
+                    "expected_text": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "action_parameters": {
+                  "type": "object",
+                  "properties": {
+                    "take_screenshot": {
+                      "type": "string",
+                      "enum": ["yes", "no"]
+                    },
                     "timeout": {
                       "type": "string",
                       "pattern": "^[0-9]+$"
                     },
-                    "expected_text": {
-                      "type": "string"
+                    "visual_check": {
+                      "type": "string",
+                      "enum": ["yes", "no"]
                     }
                   }
                 }

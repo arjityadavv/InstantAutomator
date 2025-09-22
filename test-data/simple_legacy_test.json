@@ -1,0 +1,39 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Simple Legacy Test",
+    "testsuite_owner": "Test User",
+    "test_report_path": "./test-reports"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Simple Browser Test",
+      "description": "Simple test without object map dependencies",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "https://www.google.com"
+          }
+        },
+        {
+          "action_name": "ui_wait",
+          "action_type": "ui",
+          "action_config": {
+            "wait_for": "seconds",
+            "wait_seconds": 2
+          }
+        }
+      ]
+    }
+  ]
+}

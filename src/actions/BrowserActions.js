@@ -30,23 +30,43 @@ class BrowserActions extends BaseActions {
         return result;
     }
 
-    async uiOpenBrowser(actionConfig) {
+    async uiOpenBrowser(actionConfig, actionParameters = {}, actionIndex = 0) {
         try {
             const browserName = actionConfig.browser_name || 'chromium';
             const browserType = browserName === 'firefox' ? firefox :
                               browserName === 'webkit' ? webkit : chromium;
+
+            // Process action parameters
+            const params = this.processActionParameters(actionConfig, actionParameters);
 
             this.browser = await browserType.launch({
                 headless: false
             });
             const context = await this.browser.newContext();
             this.page = await context.newPage();
-            const result = {
+            
+            let result = {
                 result: 'PASS',
                 message: 'Browser opened successfully',
                 continueTest: true
             };
-            return await this.handleScreenshot('ui_open_browser', actionConfig, result);
+
+            // Handle screenshot
+            result = await this.handleScreenshot('ui_open_browser', params, result, this.page);
+
+            // Handle visual testing
+            const visualResult = await this.handleVisualTesting('ui_open_browser', actionConfig, params, this.page, actionIndex);
+            if (visualResult) {
+                result.visualResult = visualResult;
+                if (visualResult.status === 'FAIL') {
+                    result.result = 'FAIL';
+                    result.message += ` | Visual check failed: ${visualResult.message}`;
+                } else if (visualResult.status === 'BASELINE_CREATED') {
+                    result.message += ` | Baseline created: ${visualResult.message}`;
+                }
+            }
+
+            return result;
         } catch (e) {
             return {
                 result: 'FAIL',
@@ -56,7 +76,7 @@ class BrowserActions extends BaseActions {
         }
     }
 
-    async uiNavigate(actionConfig) {
+    async uiNavigate(actionConfig, actionParameters = {}) {
         try {
             if (!this.page) {
                 throw new Error('No active browser page');
@@ -65,13 +85,33 @@ class BrowserActions extends BaseActions {
             // Process config to handle {{var.keyName}} and {{obj.keyName}} substitutions
             const processedConfig = this.processConfig(actionConfig);
             
+            // Process action parameters
+            const params = this.processActionParameters(actionConfig, actionParameters);
+            
             await this.page.goto(processedConfig.url);
-            const result = {
+            
+            let result = {
                 result: 'PASS',
                 message: `Navigated to ${processedConfig.url} successfully`,
                 continueTest: true
             };
-            return await this.handleScreenshot('ui_navigate', actionConfig, result);
+
+            // Handle screenshot
+            result = await this.handleScreenshot('ui_navigate', params, result, this.page);
+
+            // Handle visual testing
+            const visualResult = await this.handleVisualTesting('ui_navigate', actionConfig, params, this.page);
+            if (visualResult) {
+                result.visualResult = visualResult;
+                if (visualResult.status === 'FAIL') {
+                    result.result = 'FAIL';
+                    result.message += ` | Visual check failed: ${visualResult.message}`;
+                } else if (visualResult.status === 'BASELINE_CREATED') {
+                    result.message += ` | Baseline created: ${visualResult.message}`;
+                }
+            }
+
+            return result;
         } catch (e) {
             return {
                 result: 'FAIL',
@@ -81,7 +121,7 @@ class BrowserActions extends BaseActions {
         }
     }
 
-    async uiClick(actionConfig) {
+    async uiClick(actionConfig, actionParameters = {}) {
         try {
             if (!this.page) {
                 throw new Error('No active browser page');
@@ -90,15 +130,35 @@ class BrowserActions extends BaseActions {
             // Process config to handle {{var.keyName}} and {{obj.keyName}} substitutions
             const processedConfig = this.processConfig(actionConfig);
             
+            // Process action parameters
+            const params = this.processActionParameters(actionConfig, actionParameters);
+            
             // Here we assume the object_name maps to a selector in the object map
             const selector = this.getSelector(processedConfig.object_name);
             await this.page.click(selector);
-            const result = {
+            
+            let result = {
                 result: 'PASS',
                 message: `Clicked ${processedConfig.object_name} successfully`,
                 continueTest: true
             };
-            return await this.handleScreenshot('ui_click', actionConfig, result);
+
+            // Handle screenshot
+            result = await this.handleScreenshot('ui_click', params, result, this.page);
+
+            // Handle visual testing
+            const visualResult = await this.handleVisualTesting('ui_click', actionConfig, params, this.page);
+            if (visualResult) {
+                result.visualResult = visualResult;
+                if (visualResult.status === 'FAIL') {
+                    result.result = 'FAIL';
+                    result.message += ` | Visual check failed: ${visualResult.message}`;
+                } else if (visualResult.status === 'BASELINE_CREATED') {
+                    result.message += ` | Baseline created: ${visualResult.message}`;
+                }
+            }
+
+            return result;
         } catch (e) {
             return {
                 result: 'FAIL',

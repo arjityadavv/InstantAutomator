@@ -6,10 +6,10 @@ const propertyValidations = {
         example: './test-reports',
         validate: (value) => {
             if (typeof value !== 'string') return false;
-            // Must be a valid path format
-            return /^\.?[\/\\]?[\w\-. /\\]+$/.test(value);
+            // Just check if it's a non-empty string - path validation is done elsewhere
+            return value.trim().length > 0;
         },
-        message: 'Must be a valid path string (e.g., "./test-reports", "reports", "../reports")'
+        message: 'Must be a valid path string (e.g., "./test-reports", "C:\\reports", "/path/to/reports")'
     },
 
     'testsuite_name': {
@@ -32,11 +32,10 @@ const propertyValidations = {
         example: './objectmap.json',
         validate: (value) => {
             if (typeof value !== 'string') return false;
-            // Must be a .json file path
-            return value.endsWith('.json') && 
-                   /^\.?[\/\\]?[\w\-. /\\]+\.json$/.test(value);
+            // Just check if it's a .json file and non-empty - path validation is done elsewhere
+            return value.trim().length > 0 && value.endsWith('.json');
         },
-        message: 'Must be a valid path to a JSON file (e.g., "./objectmap.json", "maps/objectmap.json")'
+        message: 'Must be a valid path to a JSON file (e.g., "./objectmap.json", "C:\\maps\\objectmap.json")'
     },
 
     'browser': {

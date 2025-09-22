@@ -1,0 +1,33 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Test with Full Paths",
+    "testsuite_owner": "Test User",
+    "test_report_path": "C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\test-reports",
+    "object_map_external": "C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\objectmap2.json",
+    "variable_map_external": "C:\\Users\\yadav\\Desktop\\atas_new\\InstantAutomator\\variable_map.json"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Full Path Test",
+      "description": "Testing with full paths",
+      "execute": "yes",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "sso_login": "no"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui",
+          "action_config": {
+            "url": "{{var.url}}"
+          }
+        }
+      ]
+    }
+  ]
+}

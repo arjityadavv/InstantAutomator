@@ -1,0 +1,40 @@
+{
+  "testifact_info": {
+    "testsuite_name": "Visual Testing Enhanced Demo",
+    "testsuite_owner": "SNAP Team",
+    "test_report_path": "./test-reports"
+  },
+  "testifact_items": [
+    {
+      "test_name": "Enhanced Visual Test",
+      "execute": "yes",
+      "description": "Test enhanced visual testing with auto-baseline creation and Allure integration",
+      "test_actions": [
+        {
+          "action_name": "ui_open_browser",
+          "action_type": "ui",
+          "action_config": {
+            "browser_name": "chrome",
+            "visual_check": "no"
+          }
+        },
+        {
+          "action_name": "ui_navigate",
+          "action_type": "ui", 
+          "action_config": {
+            "url": "https://example.com",
+            "visual_check": "no"
+          }
+        },
+        {
+          "action_name": "ui_wait",
+          "action_type": "ui",
+          "action_config": {
+            "wait_time": "2000",
+            "visual_check": "no"
+          }
+        }
+      ]
+    }
+  ]
+}

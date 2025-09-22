@@ -1,8 +1,8 @@
 {
-  "name": "playwright-snap",
-  "version": "1.0.0",
+  "name": "@arjityadavv/snap",
+  "version": "1.7.0",
   "type": "commonjs",
-  "description": "JSON-driven test automation framework using Playwright",
+  "description": "SNAP - Simple No-code Automation Platform: Advanced JSON-driven test automation framework with context-aware visual testing built on Playwright",
   "main": "index.js",
   "bin": {
     "snap": "./bin/cli.js"
@@ -11,21 +11,42 @@
     "test": "node index.js",
     "start": "node bin/cli.js run",
     "allure:generate": "allure generate ./allure-results -o ./allure-report --clean",
-    "allure:open": "allure open ./allure-report"
+    "allure:open": "allure open ./allure-report",
+    "prepublishOnly": "npm run build:docs",
+    "build:docs": "echo 'Documentation built'"
   },
   "keywords": [
     "testing",
     "automation",
-    "playwright"
+    "playwright",
+    "visual-testing",
+    "json-driven",
+    "test-framework",
+    "regression-testing",
+    "snap"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Arjit Yadav <arjit@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arjityadavv/InstantAutomator.git"
+  },
+  "homepage": "https://github.com/arjityadavv/InstantAutomator#readme",
+  "bugs": {
+    "url": "https://github.com/arjityadavv/InstantAutomator/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "preferGlobal": true,
   "dependencies": {
     "@playwright/test": "^1.41.2",
     "ajv": "^8.17.1",
     "allure-commandline": "^2.24.1",
     "allure-js-commons": "^2.9.2",
     "chalk": "^4.1.2",
-    "commander": "^11.1.0"
+    "commander": "^11.1.0",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0"
   }
 }

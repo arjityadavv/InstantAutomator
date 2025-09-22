@@ -84,6 +84,48 @@ class AllureReporter {
         await this.addAttachment(name, buffer, ContentType.PNG);
     }
 
+    /**
+     * Add visual testing attachments for debugging failed visual tests
+     * @param {Object} visualResult - Result from visual testing with paths
+     */
+    async addVisualTestingAttachments(visualResult) {
+        if (!this.currentTest || !visualResult.visualFailure) return;
+        
+        try {
+            // Add baseline image
+            if (visualResult.baselinePath && require('fs').existsSync(visualResult.baselinePath)) {
+                const baselineBuffer = await fs.readFile(visualResult.baselinePath);
+                await this.addAttachment('Baseline Image', baselineBuffer, ContentType.PNG);
+            }
+            
+            // Add current screenshot
+            if (visualResult.actualPath && require('fs').existsSync(visualResult.actualPath)) {
+                const actualBuffer = await fs.readFile(visualResult.actualPath);
+                await this.addAttachment('Current Screenshot', actualBuffer, ContentType.PNG);
+            }
+            
+            // Add diff image if available
+            if (visualResult.diffPath && require('fs').existsSync(visualResult.diffPath)) {
+                const diffBuffer = await fs.readFile(visualResult.diffPath);
+                await this.addAttachment('Visual Difference', diffBuffer, ContentType.PNG);
+            }
+            
+            // Add comparison details as text
+            if (visualResult.comparison) {
+                const comparisonText = `Visual Comparison Details:
+Status: ${visualResult.status}
+Message: ${visualResult.message}
+Baseline: ${visualResult.baselineName}
+Comparison Result: ${JSON.stringify(visualResult.comparison, null, 2)}`;
+                
+                await this.addAttachment('Visual Comparison Details', comparisonText, ContentType.TEXT);
+            }
+            
+        } catch (error) {
+            console.error('Failed to add visual testing attachments:', error.message);
+        }
+    }
+
     async addError(error, trace) {
         if (!this.currentTest) return;
 

@@ -1,0 +1,36 @@
+# Development files
+.git/
+.gitignore
+*.md.backup
+
+# Test files and results
+test-reports/
+allure-results/
+test_report.json/
+visual-baselines/
+visual-actual/
+visual-diffs/
+
+# Example and test data (keep some for examples)
+tests-examples/
+understanding_framework.md
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime files
+node_modules/
+.npm
+
+# Keep these for examples
+!test-data/testscript.json
+!test-data/visual_testing_demo.json

@@ -5,13 +5,16 @@ const BuildInfoCollector = require('./BuildInfoCollector');
 
 class Reporter {
     constructor(reportPath) {
-        this.reportPath = reportPath;
+        this.reportPath = path.resolve(reportPath);
         this.testResults = [];
         this.currentTest = null;
-        this.analytics = new TestAnalytics(reportPath);
+        this.analytics = new TestAnalytics(this.reportPath);
         this.buildInfoCollector = new BuildInfoCollector();
         this.suites = new Map();
         this.currentSuite = null;
+        
+        // Debug logging
+        console.log(`🗂️  Reporter initialized with path: ${this.reportPath}`);
     }
 
     async startTestSuite(suiteName) {
@@ -166,7 +169,13 @@ class Reporter {
             tests: allTests
         });
 
-        const reportPath = path.join(this.reportPath, `report_${new Date().toISOString().replace(/:/g, '-')}.html`);
+        const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\./g, '-');
+        const reportName = `report_${this.currentSuite?.name || 'testsuite'}_${timestamp}.html`;
+        const reportPath = path.join(this.reportPath, reportName);
+        
+        // Debug logging
+        console.log(`📄 HTML report also generated: ${reportPath}`);
+        
         await fs.mkdir(this.reportPath, { recursive: true });
         await fs.writeFile(reportPath, reportTemplate);
         return reportPath;
